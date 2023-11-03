@@ -13,9 +13,6 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/estilos.css" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="tu-archivo-de-estilos.css">
-
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -95,10 +92,18 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      .btn:hover {
+        transform: scale(1.1); /* Aumenta el tamaño del botón al 110% en el hover */
+      }
     </style>
 
   </head>
+
+
   <body>
+
+    <!------------------------- Inicio iconos boton------------------------->
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -115,6 +120,9 @@
       </symbol>
     </svg>
 
+    <!------------------------- FIN iconos boton------------------------->
+
+    <!----------------BOTON OSCURO------------------>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
@@ -150,7 +158,10 @@
       </ul>
     </div>
 
-    
+    <!----------------FIN BOTON OSCURO------------------>
+
+    <!----------------INICO BARRA SUPERIOR------------------>
+
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
@@ -169,7 +180,12 @@
   </nav>
 </header>
 
+    <!---------------FIN BARRA SUPERIOR------------------>
+
+
 <main>
+
+  <!---------------INICIO CONTENEDOR CARRUSEL------------------>
 
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -222,17 +238,20 @@
     </button>
   </div>
 
+    <!---------------FIN CONTENEDOR CARRUSEL------------------>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+  <!---------------INICIO CONTENEDOR LOGIN------------------>
 
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="fw-normal" width="100" height="100" src="./Imagenes/1.jpg" alt="Imagen Ingresar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+        </svg>
         <h2 class="fw-normal">Ingresar</h2>
         <p>Si ya tiene un usuario de click para ingresar.</p>
         <p><a class="btn btn-secondary" href="#">Ingresar &raquo;</a></p>
@@ -247,52 +266,68 @@
         <p><a class="btn btn-secondary" href="#">Registrarse &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
     
-    
      
     </div><!-- /.row -->
 
+    <!---------------FIN CONTENEDOR LOGIN------------------>
 
-    <!-- START THE FEATURETTES -->
+
+
+    <!---------------INICIO CONTENEDOR CLINICA------------------>
+
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Clínica Bien Amada.</h2>
+        <h2 class="featurette-heading fw-normal lh-1">Clínica La Bien Amada.</h2>
         <p class="lead">“Donde la salud y el cuidado se encuentran con el amor”</p>
       </div>
       <div class="col-md-5">
-        <img src="./Imagenes/quienes somos.png" alt="Imagen Descriptiva" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="150">
+        <img src="./Imagenes/clinica.jpeg" alt="Imagen Descriptiva" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300">
       </div>
       
     </div>
+
+    <!---------------FIN CONTENEDOR CLINICA------------------>
+
+    <!---------------INICIO CONTENEDOR QUIENES SOMOS----------------->
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">¿Quienes somos?  <span class="text-body-secondary"></h2>
-        <p class="lead">"Clínica La Bien Amada es un centro de salud dedicado a proporcionar atención médica de alta calidad con un toque personalizado. Nuestro equipo de profesionales médicos altamente capacitados y compasivos se dedica a mejorar la salud y el bienestar de nuestros pacientes. Creemos en el cuidado integral, que abarca no solo el tratamiento físico, sino también el apoyo emocional y mental. En Clínica Bien Amada, tratamos a cada paciente como si fuera un miembro de nuestra propia familia, proporcionando un ambiente seguro y acogedor donde pueden recibir la atención que necesitan. Nuestro objetivo es hacer que cada visita sea una experiencia positiva, ayudando a nuestros pacientes a vivir vidas más saludables y felices".</p>
+        <p class="lead">"Clínica La Bien Amada es un centro de salud dedicado a proporcionar atención médica de alta calidad con un toque personalizado. Nuestro equipo de profesionales médicos altamente capacitados y compasivos se dedica a mejorar la salud y el bienestar de nuestros pacientes. Creemos en el cuidado integral, que abarca no solo el tratamiento físico, sino también el apoyo emocional y mental. En Clínica La Bien Amada, tratamos a cada paciente como si fuera un miembro de nuestra propia familia, proporcionando un ambiente seguro y acogedor donde pueden recibir la atención que necesitan. Nuestro objetivo es hacer que cada visita sea una experiencia positiva, ayudando a nuestros pacientes a vivir vidas más saludables y felices".</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="./Imagenes/familia.jpg" alt="Imagen Descriptiva" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="150">
+        <img src="./Imagenes/familia.jpg" alt="Imagen Descriptiva" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300">
       </div>
     </div>
 
+    <!---------------FIN CONTENEDOR QUIENES SOMOS----------------->
+
+
     <hr class="featurette-divider">
+
+    <!---------------INICIO CONTENEDOR CONTACTANOS----------------->
+
 
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Contactanos </h2>
         <p class="lead">Nuestra sede principal esta ubicada en la ciudad de Bogota, calle 5 número 15-23 con direccion sur a Mordor.</p>
-        <li>Líneas de atención nacional: +57 310 723 1726</li>
-        <li>+57 312 761 7494</li>
+        <p>Líneas de atención nacional: </p>
+        <li>Whatsapp: +57 310 723 1726</li>
+        <li>Citas medicas: +57 312 761 7494</li>
+        <li>Telefono fijo: (601) 3077077</li>
         <li>Línea de atención gratuita:  018000 234 56 78</li>
+        <p>Correo electronico: clinicalabienamada@gmail.com</p>
       </div>
       <div class="col-md-5">
         <section class="mapa">
             <div class="mapa-contenido">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.6909876210198!2d-46.63473878987259!3d-23.588390064517696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2spe!4v1661122820032!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.6909876210198!2d-46.63473878987259!3d-23.588390064517696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2spe!4v1661122820032!5m2!1ses!2spe" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </div>
@@ -300,18 +335,22 @@
     
     </div>
 
-    <hr class="featurette-divider">
+    <!---------------FIN CONTENEDOR CONTACTANOS----------------->
 
-    <!-- /END THE FEATURETTES -->
+
+    <hr class="featurette-divider">
 
   </div><!-- /.container -->
 
 
-  <!-- FOOTER -->
+  <!--------------------------- INICIO FOOTER --------------------->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
     <p>&copy; 2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
+
+    <!--------------------------- FIN FOOTER --------------------->
+
 </main>
 <script src="js/bootstrap.bundle.min.js"></script>
 
